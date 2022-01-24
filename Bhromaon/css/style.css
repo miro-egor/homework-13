@@ -1,0 +1,580 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__search-string {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fone-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header__search-string h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.header__search-string p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 6.82px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.header__search-string .search {
+  max-width: 326px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+}
+.header__search-string .search .search-term {
+  width: 250px;
+  height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 7px;
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #fefefe;
+  border: none;
+  outline: none;
+}
+.header__search-string .search .search-button {
+  display: flex;
+  background-color: #5474fd;
+  border: none;
+  cursor: pointer;
+}
+.header__search-string .search .search-button span {
+  display: none;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header__search-string .search .search-button .icon-menu-search {
+  fill: #fff;
+}
+.header__hero {
+  height: 40px;
+  display: flex;
+  background-color: #5474fd;
+}
+.header__hero .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__hero__menu .button-menu {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header__hero__menu .button-menu .icon-menu-burger {
+  fill: #fff;
+}
+.header__hero__menu ul {
+  display: none;
+}
+.header__hero__menu ul li a {
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__hero__menu ul li:not(:last-child) {
+  margin-right: 48px;
+}
+
+main .why-choose-us {
+  background-image: url("../img/fone-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 57px 0;
+}
+main .why-choose-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .why-choose-us__information {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .why-choose-us__information h3 {
+  font-family: "Aleo", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 25px;
+}
+main .why-choose-us__information p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+  color: #fefefe;
+  margin-bottom: 22px;
+}
+main .why-choose-us__information button {
+  width: 114px;
+  height: 33px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: #5474fd;
+  margin-bottom: 22px;
+}
+main .why-choose-us__information button span {
+  font-family: "Aleo", serif;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+main .why-choose-us__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .why-choose-us__photo img {
+  max-width: 100%;
+}
+main .why-choose-us__photo img:not(:last-child) {
+  margin-bottom: 22px;
+}
+main .how-it-works {
+  padding: 38px 0 48px;
+  background-color: #333333;
+}
+main .how-it-works .round-line {
+  display: none;
+}
+main .how-it-works ul {
+  display: flex;
+  justify-content: center;
+}
+main .how-it-works ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .how-it-works ul li:not(:last-child) {
+  margin-right: 52px;
+}
+main .how-it-works ul li svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 19px;
+}
+main .how-it-works ul li .icon-search {
+  fill: #5474fd;
+}
+main .how-it-works ul li .icon-select {
+  fill: #ff6363;
+}
+main .how-it-works ul li .icon-like {
+  fill: #00a2ff;
+}
+main .how-it-works ul li span {
+  font-family: "Aleo", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #fefefe;
+}
+main .spain__house {
+  height: 100vh;
+  background-image: url("../img/fone-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .spain__house .container {
+  height: 100vh;
+  position: relative;
+}
+main .spain__house__wrapper {
+  width: 100%;
+  max-width: 270px;
+  height: 185px;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #232323;
+  opacity: 0.9;
+  padding: 15px 15px 0 15px;
+}
+main .spain__mountain {
+  height: 100vh;
+  background-image: url("../img/fone-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .spain__mountain .container {
+  height: 100vh;
+  position: relative;
+}
+main .spain__mountain__wrapper {
+  width: 100%;
+  max-width: 270px;
+  height: 185px;
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #232323;
+  opacity: 0.9;
+  padding: 15px 15px 0 15px;
+}
+main .spain span {
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: #fefefe;
+  margin-bottom: 11px;
+}
+main .spain h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fefefe;
+  margin-bottom: 13px;
+}
+main .spain p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #fefefe;
+  margin-bottom: 23px;
+}
+main .spain button {
+  width: 114px;
+  height: 33px;
+  border: none;
+  cursor: pointer;
+  background-color: #5474fd;
+}
+main .spain button span {
+  display: contents;
+  font-family: "Aleo", serif;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .tourist-say {
+  height: 80vh;
+  background-image: url("../img/fone-5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 64px 0 100px;
+}
+main .tourist-say h3 {
+  font-family: "Aleo", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 45px;
+}
+main .tourist-say__story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .tourist-say__story img {
+  max-width: 100%;
+  width: 445px;
+  height: auto;
+  margin-bottom: 15px;
+}
+main .tourist-say__story .history-sam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .tourist-say__story .history-sam h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fefefe;
+  margin-bottom: 10px;
+}
+main .tourist-say__story .history-sam p {
+  max-width: 515px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+}
+main .tourist-say__story .history-sam p::before {
+  content: "";
+  background-image: url(../img/quote-left-solid.svg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer {
+  background-color: #232323;
+  padding: 60px 0 27px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  margin-bottom: 8px;
+}
+.footer p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer__link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__link-social li:not(:last-child) {
+  margin-right: 30px;
+}
+.footer__link-social li .icon-social {
+  fill: #fefefe;
+  transition-property: fill;
+  transition-duration: 0.3s;
+}
+.footer__link-social li .icon-social:hover {
+  fill: #5474fd;
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__search-string h2 {
+    font-size: 48px;
+    margin-bottom: 11px;
+  }
+  .header__search-string p {
+    font-size: 22px;
+    margin-bottom: 48px;
+  }
+  .header__search-string .search {
+    max-width: 653px;
+    height: 63px;
+  }
+  .header__search-string .search .search-term {
+    width: 500px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .header__search-string .search .search-button {
+    width: 146px;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header__search-string .search .search-button span {
+    display: flex;
+  }
+  .header__hero {
+    height: 80px;
+  }
+  .header__hero__menu .button-menu {
+    display: none;
+  }
+  .header__hero__menu ul {
+    display: flex;
+  }
+
+  main .why-choose-us {
+    padding: 115px 0 0;
+  }
+  main .why-choose-us .container {
+    flex-direction: row;
+    position: relative;
+  }
+  main .why-choose-us__information {
+    max-width: 560px;
+    align-items: flex-start;
+    margin-right: 110px;
+  }
+  main .why-choose-us__information h3 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  main .why-choose-us__information p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 45px;
+  }
+  main .why-choose-us__information button {
+    width: 228px;
+    height: 63px;
+    margin-bottom: 131px;
+  }
+  main .why-choose-us__information button span {
+    font-size: 16px;
+  }
+  main .why-choose-us__photo img {
+    max-width: 100%;
+  }
+  main .why-choose-us__photo img:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  main .why-choose-us__photo .image-one {
+    position: absolute;
+    bottom: 65%;
+    right: 7%;
+  }
+  main .why-choose-us__photo .image-two {
+    position: absolute;
+    top: 34%;
+    right: 0%;
+  }
+  main .how-it-works {
+    padding: 50px 0 60px;
+  }
+  main .how-it-works .container {
+    position: relative;
+  }
+  main .how-it-works .round-line {
+    width: 800px;
+    height: 78px;
+    display: flex;
+    position: absolute;
+    bottom: 70%;
+    right: 14%;
+  }
+  main .how-it-works ul li:not(:last-child) {
+    margin-right: 105px;
+  }
+  main .how-it-works ul li svg {
+    width: 160px;
+    height: 60px;
+    z-index: 3;
+    border-radius: 50%;
+    background-color: #333333;
+    padding: 15px;
+    margin-bottom: 38px;
+  }
+  main .how-it-works ul li span {
+    font-size: 25px;
+  }
+  main .spain__house__wrapper, main .spain__mountain__wrapper {
+    max-width: 525px;
+    width: 100%;
+    height: 341px;
+  }
+  main .spain span {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+  main .spain h3 {
+    font-size: 20px;
+  }
+  main .spain p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 46px;
+  }
+  main .spain button {
+    width: 228px;
+    height: 63px;
+  }
+  main .spain button span {
+    font-size: 16px;
+  }
+  main .tourist-say h3 {
+    font-size: 36px;
+    margin-bottom: 91px;
+  }
+  main .tourist-say__story {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  main .tourist-say__story img {
+    max-width: 100%;
+    width: 445px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  main .tourist-say__story .history-sam {
+    width: 668px;
+    height: 284px;
+    align-items: flex-start;
+    background-color: #333333;
+  }
+  main .tourist-say__story .history-sam h4 {
+    font-size: 20px;
+    margin: 49px 0 10px 62px;
+  }
+  main .tourist-say__story .history-sam p {
+    line-height: 26px;
+    text-align: left;
+    margin-left: 62px;
+  }
+
+  .footer {
+    padding: 122px 0 53px;
+  }
+  .footer img {
+    margin-bottom: 10px;
+  }
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

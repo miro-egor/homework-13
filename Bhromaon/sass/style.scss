@@ -1,0 +1,622 @@
+$color-white: #fff;
+$color-grey-white: #fefefe;
+$color-blue: #5474fd;
+$color-white-blue: #00a2ff;
+$color-red: #ff6363;
+$color-grey: #333333;
+$color-dark-grey: #232323;
+
+$family-Aleo: "Aleo", serif;
+$family-Josefin-Sans: "Josefin Sans", sans-serif;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  &__search-string {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/fone-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    h2 {
+      font-family: $family-Josefin-Sans;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 4.8px;
+      text-transform: uppercase;
+      color: $color-white;
+      margin-bottom: 6px;
+    }
+    p {
+      font-family: $family-Josefin-Sans;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 6.82px;
+      color: $color-white;
+      margin-bottom: 24px;
+    }
+    .search {
+      max-width: 326px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: $color-white;
+      .search-term {
+        width: 250px;
+        height: 30px;
+        font-family: $family-Josefin-Sans;
+        font-size: 7px;
+        font-weight: 400;
+        letter-spacing: 2.8px;
+        text-align: center;
+        color: $color-grey-white;
+        border: none;
+        outline: none;
+      }
+      .search-button {
+        display: flex;
+        background-color: $color-blue;
+        border: none;
+        cursor: pointer;
+        span {
+          display: none;
+          font-family: $family-Aleo;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          color: $color-white;
+        }
+        .icon-menu-search {
+          fill: $color-white;
+        }
+      }
+    }
+  }
+  &__hero {
+    height: 40px;
+    display: flex;
+    background-color: #5474fd;
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__menu {
+      .button-menu {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        .icon-menu-burger {
+          fill: $color-white;
+        }
+      }
+      ul {
+        display: none;
+        li {
+          a {
+            font-family: $family-Aleo;
+            font-size: 14px;
+            font-weight: 400;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+          &:not(:last-child) {
+            margin-right: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .why-choose-us {
+    background-image: url("../img/fone-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 57px 0;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__information {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-family: $family-Aleo;
+        font-size: 18px;
+        font-weight: 400;
+        color: $color-white;
+        margin-bottom: 25px;
+      }
+      p {
+        font-family: $family-Josefin-Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 1.6px;
+        color: $color-grey-white;
+        margin-bottom: 22px;
+      }
+      button {
+        width: 114px;
+        height: 33px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        background-color: $color-blue;
+        margin-bottom: 22px;
+        span {
+          font-family: $family-Aleo;
+          font-size: 8px;
+          font-weight: 400;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    &__photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+  .how-it-works {
+    padding: 38px 0 48px;
+    background-color: $color-grey;
+    .round-line {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-child) {
+          margin-right: 52px;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+          margin-bottom: 19px;
+        }
+        .icon-search {
+          fill: $color-blue;
+        }
+        .icon-select {
+          fill: $color-red;
+        }
+        .icon-like {
+          fill: $color-white-blue;
+        }
+        span {
+          font-family: $family-Aleo;
+          font-size: 18px;
+          font-weight: 400;
+          text-align: center;
+          color: $color-grey-white;
+        }
+      }
+    }
+  }
+  .spain {
+    &__house {
+      height: 100vh;
+      background-image: url("../img/fone-3.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // background-attachment: fixed;
+      .container {
+        height: 100vh;
+        position: relative;
+      }
+      &__wrapper {
+        width: 100%;
+        max-width: 270px;
+        height: 185px;
+        position: absolute;
+        bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-dark-grey;
+        opacity: 0.9;
+        padding: 15px 15px 0 15px;
+      }
+    }
+    &__mountain {
+      height: 100vh;
+      background-image: url("../img/fone-4.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // background-attachment: fixed;
+      .container {
+        height: 100vh;
+        position: relative;
+      }
+      &__wrapper {
+        width: 100%;
+        max-width: 270px;
+        height: 185px;
+        position: absolute;
+        bottom: 10%;
+        right: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $color-dark-grey;
+        opacity: 0.9;
+        padding: 15px 15px 0 15px;
+      }
+    }
+    span {
+      display: inline-block;
+      font-family: $family-Josefin-Sans;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      color: $color-grey-white;
+      margin-bottom: 11px;
+    }
+    h3 {
+      font-family: $family-Josefin-Sans;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: $color-grey-white;
+      margin-bottom: 13px;
+    }
+    p {
+      font-family: $family-Josefin-Sans;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 13px;
+      color: $color-grey-white;
+      margin-bottom: 23px;
+    }
+    button {
+      width: 114px;
+      height: 33px;
+      border: none;
+      cursor: pointer;
+      background-color: $color-blue;
+      span {
+        display: contents;
+        font-family: $family-Aleo;
+        font-size: 8px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .tourist-say {
+    height: 80vh;
+    background-image: url("../img/fone-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 64px 0 100px;
+    h3 {
+      font-family: $family-Aleo;
+      font-size: 18px;
+      font-weight: 400;
+      color: $color-white;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    &__story {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 100%;
+        width: 445px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .history-sam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-family: $family-Josefin-Sans;
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: $color-grey-white;
+          margin-bottom: 10px;
+        }
+        p {
+          max-width: 515px;
+          font-family: $family-Josefin-Sans;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          color: $color-white;
+          &::before {
+            content: "";
+            background-image: url(../img/quote-left-solid.svg);
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $color-dark-grey;
+  padding: 60px 0 27px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    margin-bottom: 8px;
+  }
+  p {
+    font-family: $family-Josefin-Sans;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    color: $color-white;
+    margin-bottom: 20px;
+  }
+  &__link-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      .icon-social {
+        fill: $color-grey-white;
+        transition-property: fill;
+        transition-duration: 0.3s;
+        &:hover {
+          fill: $color-blue;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    &__search-string {
+      h2 {
+        font-size: 48px;
+        margin-bottom: 11px;
+      }
+      p {
+        font-size: 22px;
+        margin-bottom: 48px;
+      }
+      .search {
+        max-width: 653px;
+        height: 63px;
+        .search-term {
+          width: 500px;
+          height: 60px;
+          font-size: 14px;
+        }
+        .search-button {
+          width: 146px;
+          height: 60px;
+          justify-content: space-evenly;
+          align-items: center;
+          span {
+            display: flex;
+          }
+        }
+      }
+    }
+    &__hero {
+      height: 80px;
+      &__menu {
+        .button-menu {
+          display: none;
+        }
+        ul {
+          display: flex;
+        }
+      }
+    }
+  }
+  main {
+    .why-choose-us {
+      padding: 115px 0 0;
+      .container {
+        flex-direction: row;
+        position: relative;
+      }
+      &__information {
+        max-width: 560px;
+        align-items: flex-start;
+        margin-right: 110px;
+        h3 {
+          font-size: 36px;
+          margin-bottom: 50px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          margin-bottom: 45px;
+        }
+        button {
+          width: 228px;
+          height: 63px;
+          margin-bottom: 131px;
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+      &__photo {
+        img {
+          max-width: 100%;
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+        .image-one {
+          position: absolute;
+          bottom: 65%;
+          right: 7%;
+        }
+        .image-two {
+          position: absolute;
+          top: 34%;
+          right: 0%;
+        }
+      }
+    }
+    .how-it-works {
+      padding: 50px 0 60px;
+      .container {
+        position: relative;
+      }
+      .round-line {
+        width: 800px;
+        height: 78px;
+        display: flex;
+        position: absolute;
+        bottom: 70%;
+        right: 14%;
+      }
+      ul {
+        li {
+          &:not(:last-child) {
+            margin-right: 105px;
+          }
+          svg {
+            width: 160px;
+            height: 60px;
+            z-index: 3;
+            border-radius: 50%;
+            background-color: $color-grey;
+            padding: 15px;
+            margin-bottom: 38px;
+          }
+          span {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .spain {
+      &__house,
+      &__mountain {
+        &__wrapper {
+          max-width: 525px;
+          width: 100%;
+          height: 341px;
+        }
+      }
+      span {
+        font-size: 20px;
+        margin-bottom: 23px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 46px;
+      }
+      button {
+        width: 228px;
+        height: 63px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .tourist-say {
+      h3 {
+        font-size: 36px;
+        margin-bottom: 91px;
+      }
+      &__story {
+        flex-direction: row;
+        align-items: flex-start;
+        img {
+          max-width: 100%;
+          width: 445px;
+          height: auto;
+          margin-bottom: 15px;
+        }
+        .history-sam {
+          width: 668px;
+          height: 284px;
+          align-items: flex-start;
+          background-color: $color-grey;
+          h4 {
+            font-size: 20px;
+            margin: 49px 0 10px 62px;
+          }
+          p {
+            line-height: 26px;
+            text-align: left;
+            margin-left: 62px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 122px 0 53px;
+    img {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
